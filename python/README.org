@@ -1,0 +1,10 @@
+#+TITLE: Python
+
+Like for other languages, for python we have two set of code style rules that we
+try to follow:
+
+1. [[https://github.com/python/mypy][mypy]] and [[https://github.com/PyCQA/flake8][flake8]] cover the /enforced/ category of rules.
+2. [[https://github.com/PyCQA/pylint][pylint]], [[https://github.com/jendrikseipp/vulture][vulture]] and [[https://github.com/openstack/bandit][bandit]] are /optional/ but /recommended/.
+
+For an example repository that uses these checkers, see [[https://gitlab.com/vernacularai/ai/plute][plute]]. The relevant
+config files specifying the rules we disabled or enabled is in this directory.
