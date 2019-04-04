@@ -6,5 +6,26 @@ try to follow:
 1. [[https://github.com/python/mypy][mypy]] and [[https://github.com/PyCQA/flake8][flake8]] cover the /enforced/ category of rules.
 2. [[https://github.com/PyCQA/pylint][pylint]], [[https://github.com/jendrikseipp/vulture][vulture]] and [[https://github.com/openstack/bandit][bandit]] are /optional/ but /recommended/.
 
-For an example repository that uses these checkers, see [[https://gitlab.com/vernacularai/ai/plute][plute]]. The relevant
-config files specifying the rules we disabled or enabled is in this directory.
+Config files specifying the rules we disabled or enabled for each tool are in
+this directory.
+
+For a package named ~pkg~, we tend to run these in the /optional/ step:
+
+#+begin_src shell
+poetry run pylint --rcfile ./.pylintrc ./pkg ./scripts ./tests
+poetry run bandit -r ./pkg
+poetry run vulture ./pkg ./scripts ./tests
+#+end_src
+
+For an example repository that uses these checkers. The relevant config files
+specifying the rules we disabled or enabled is in this directory.
+
+* Packaging
+
+Although not perfect, we recommend using [[https://github.com/sdispater/poetry][poetry]] for creating and working with
+packages (or, at least, for managing virtual environments).
+
+* Scripting
+
+For scripts written as parts of a package or without them, we recommend [[https://github.com/docopt/docopt][docopt]]
+for handling the command line entry.
