@@ -17,15 +17,12 @@ poetry run bandit -r ./pkg
 poetry run vulture ./pkg ./scripts ./tests
 #+end_src
 
-For an example repository that uses these checkers. The relevant config files
-specifying the rules we disabled or enabled is in this directory.
-
-* Packaging
+** Packaging
 
 Although not perfect, we recommend using [[https://github.com/sdispater/poetry][poetry]] for creating and working with
 packages (or, at least, for managing virtual environments).
 
-* Scripting
+** Scripting
 
 For scripts written as parts of a package or without them, we recommend [[https://github.com/docopt/docopt][docopt]]
 for handling the command line entry.
