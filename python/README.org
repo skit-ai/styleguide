@@ -21,8 +21,8 @@ poetry run vulture ./pkg ./scripts ./tests
 
 At the moment, we use ~^3.6~ in all our deployments. The recommended way to
 install python is using [[https://github.com/pyenv/pyenv-installer][pyenv]] (not to be confused with ~pyvenv~ which is for
-managing virtual environments) which lets you make easy switches between a
-python versions.
+managing virtual environments) which lets you make easy switches between python
+versions.
 
 ** Packaging
 
