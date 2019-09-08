@@ -7,7 +7,11 @@ try to follow:
 2. [[https://github.com/PyCQA/pylint][pylint]], [[https://github.com/jendrikseipp/vulture][vulture]] and [[https://github.com/openstack/bandit][bandit]] are /optional/ but /recommended/.
 
 Config files specifying the rules we disabled or enabled for each tool are in
-this directory.
+this directory. A few extra flake8 extensions that needs to be installed to
+fully /use/ the config are:
+
+- flake8-quotes
+- flake8-docstrings
 
 For a package named ~pkg~, we tend to run these in the /optional/ step:
 
