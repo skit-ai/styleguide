@@ -28,7 +28,8 @@ versions.
 
 Although not perfect, we recommend using [[https://github.com/sdispater/poetry][poetry]] for creating and working with
 packages (or, at least, for managing virtual environments). If using pyenv,
-install poetry at the system level (using, say, ~pyenv global system~).
+install poetry at the system level (using, say, ~pyenv global system~). If you are
+facing issues or don't like poetry, try [[https://github.com/dephell/dephell][dephell]].
 
 ** Scripting
 
